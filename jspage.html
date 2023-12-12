@@ -1,0 +1,104 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Page</title>
+    <link rel="stylesheet" href="jspage.css">
+</head>
+<body>
+<h1>JS Cheat Sheet Page</h1>
+
+<h2>Connecting an external scripting sheet to a html file</h2>
+<pre>
+&lt;head&gt; …
+	&lt;script src=”folder/filename.js”&gt;&lt;/script&gt;
+&lt;/head&gt;
+</pre>
+
+<h2>Accessing HTML Elements</h2>
+<pre>
+document.getElementById()
+document.getElementByClassName()
+document.getElementByName()
+document.getElementByTagName()
+
+*To access their "text / style / value" add ".innerText / .style / .value" to the structures above.
+
+*Keywords to declare a variable: var, let and const.
+</pre>
+
+<h2>HTML Events</h2>
+<pre>
+onchange
+onclick
+onmouseover
+onmouseout
+onkeydown
+onload
+</pre>
+
+<h2>JavaScript Dialogs</h2>
+<pre>
+alert
+confirm
+prompt
+</pre>
+
+<h2>Strings</h2>
+<h3>Most used string methods:</h3>
+<pre>
+stringName.indexOf(“searched string”)
+stringName.lastIndexOf(“searched string”)
+stringName.replace(“string that will be replaced”, “string that will replace”)
+stringName.search(“searched string”)
+stringName.slice(inicial index, final index)
+stringName.split(character where the string will be split in more than one string stored in a array of strings)
+stringName.toLowerCase()
+stringName.toUpperCase()
+
+*length property: stringName.length
+*To concatenate strings use + and +=
+*To access a individual character of a string use stringName.charAt(index)
+</pre>
+
+<h2>Random Numbers</h2>
+<h3>To generate random numbers use:</h3>
+<pre>
+let low = minNumber;
+let high = maxNumber;
+console.log(Math.floor(Math.random() * (high - low)) + low);
+</pre>
+
+<h2>Array</h2>
+<pre>
+To declare an array use: let arrayName = [];
+</pre>
+<h3>Most used array methods:</h3>
+<pre>
+arrayName.push(new element to be added to the end of the array)
+arrayName.unshift(new element to be added to the beginning of the array)
+arrayName.pop() – removes the last element of the array and return it
+arrayName.shift() - removes the first element of the array and return it
+arrayName.slice(starting index, final index excluded) – returns the extracted subarray and does not modify the original array
+arrayName.concat(addedArrayName)
+arrayName.indexOf(searched array) – use the same for lastIndexOf()
+arrayName.sort() – Modifies the content of the original array and is used to put elements in alphabetical order
+arrayName.sort(function(a,b){return a-b;}); - sorting an array of numbers
+</pre>
+
+<h2>JavaScript Events</h2>
+<pre>
+Mouse events: onmousewheel, onmouseover, onmousedown, onmouseup, onclick, ondblclick, and onmouseout
+Keyboard events: onkeypress, onkeyup, onkeydown
+Form events: onfocus, onblur, onchange, onsubmit
+Document/window events: onload, onunload, onscroll, and onresize
+Touch events: ontouchstart, ontouchmove, ontouchend, and ontouchcancel
+</pre>
+
+<h2>Functions</h2>
+<pre>
+In JavaScript a function can return multiple variables as an array.
+In JavaScrip you may pass a function as a function parameter.
+</pre>
+
+</body>
+</html>

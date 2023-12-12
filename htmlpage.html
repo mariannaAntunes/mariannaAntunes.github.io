@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Page</title>
+    <link rel="stylesheet" href="htmlpage.css">
+</head>
+<body>
+<h1>HTML Cheat Sheet Page</h1>
+
+<h2>The basic structure of a HTML page</h2>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+	 &lt;title&gt;&lt;/title&gt;   -&gt;   title bar of the web browser
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h2>Unpaired Tags</h2>
+<pre>
+Some tags do not have a closing tag (unpaired tags). Some that I used the most were:
+
+&lt;p&gt;
+&lt;br&gt;
+&lt;input&gt;
+&lt;img&gt;
+&lt;link&gt;
+&lt;hr&gt;
+<br>
+*If there is an element that I know I will have to style individually, I can use the attribute “id” to give this element a specific name.
+*If there is a group of elements that I know I will have to give the same style, I can use the attribute “class” to give this group a specific name.
+*To add comments use: &lt;!--  …  --&gt;
+</pre>
+
+<h2>Special Characters</h2>
+<pre>
+Special characters usually have a specific code:
+
+space = &amp;nbsp;
+< = &amp;lt;
+> = &amp;gt;
+<br>
+*Link to find more examples: <a href="https://www.w3.org/wiki/Common_HTML_entities_used_for_typography" target="_blank">Common HTML entities used for typography - W3C Wiki</a>
+</pre>
+
+<h2>Unordered Lists / Ordered Lists</h2>
+<pre>
+&lt;ul&gt; / &lt;ol&gt;
+  &lt;li&gt;…&lt;/li&gt;
+	&lt;li&gt;…&lt;/li&gt;
+	&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt; / &lt;/ol&gt;
+</pre>
+
+<h2>Links</h2>
+<pre>
+*Tag: &lt;a&gt;Text to be clicked on&lt;/a&gt;
+*Attribute: href=”put the link here or the file name for a page of your own website”
+*The attribute target=”_blank” will open the external link in a new tab
+*To link a section in the page, give an id to this section and put this id in the href=”#idgiven”
+</pre>
+
+<h2>Images</h2>
+<pre>
+*Tag: &lt;img&gt;
+*Attribute: src=”folder/file_name”
+</pre>
+
+<h2>Tables</h2>
+<pre>
+&lt;table&gt;
+  &lt;tr&gt;   -&gt;    create a row
+	 &lt;th&gt;Content goes here&lt;/th&gt;   -&gt;    for the table head
+	 &lt;th&gt;Content goes here&lt;/th&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td&gt;Content goes here&lt;/td&gt;   -&gt;    create a cell
+		&lt;td&gt;Content goes here&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+*Use the attribute colspan=”number of columns” to merge columns
+*Use the attribute rowspan=”number of rows” to merge rows
+</pre>
+
+<h2>Forms</h2>
+<h3>Tags:</h3>
+<pre>
+&lt;form&gt;&lt;/form&gt;
+&lt;textarea&gt;&lt;/textarea&gt;  -&gt;   multi-line text
+&lt;select&gt;&lt;/select&gt;      -&gt;   drop down list
+&lt;option&gt;&lt;/option&gt;      -&gt;   use inside the &lt;select&gt;
+&lt;input&gt;
+&lt;button&gt;&lt;/button&gt;
+&lt;fieldset&gt;&lt;/fieldset&gt;  -&gt;   container
+&lt;legend&gt;&lt;/legend&gt;      -&gt;   text label for the &lt;fieldset&gt;
+</pre>
+
+<h3>Attributes for input tag:</h3>
+<pre>
+type=”text” / type=”email” / type=”submit” / type=”reset” / type=”password” / type=”checkbox” / type=”image” src=”file name” / type=”url” / type=”tel”
+type=”search” / type=”range” min=”” max=”” (slider control) / type=”number” min=”” max=”” (spinner control) / type=”date”(calendar control) / type=”color” (color picker)
+placeholder
+required
+maxlength
+</pre>
+
+<h3>Attributes for textarea tag:</h3>
+<pre>
+cols
+rows
+</pre>
+
+<h3>Attributes for button tag:</h3>
+<pre>
+Type=”submit” / type=”reset” / type=”button”
+</pre>
+
+<h2>Sectioning Elements</h2>
+<h3>Tags:</h3>
+<pre>
+&lt;header&gt;&lt;/header&gt;
+&lt;article&gt;&lt;/article&gt;
+&lt;section&gt;&lt;/section&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;aside&gt;&lt;/aside&gt;
+&lt;footer&gt;&lt;/footer&gt;
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Page</title>
+    <link rel="stylesheet" href="csspage.css">
+</head>
+<body>
+<h1>CSS Cheat Sheet Page</h1>
+
+<h2>Connecting an external style sheet to a html file:</h2>
+<pre>
+&lt;head&gt; …
+	&lt;link href=”folder/file_name.css”&gt;
+&lt;/head&gt;
+</pre>
+
+<h2>CSS properties I most used</h2>
+<pre>
+color
+background-color
+background-image: url(“fileName”);
+background-repeat
+font-family (use double quotes when the value contains spaces)
+font-size
+text-align
+line-height
+text-decoration
+align-items
+justify-content
+width
+height
+margin (-top/bottom/right/left)
+padding (-top/right/bottom/left)
+border (-top/right/bottom/left)
+border-radius
+cursor
+position
+float:left (moves an element to the left until it hits another element)
+clear:both (removes floats and the element will be placed below the one before)
+</pre>
+
+<h2>ID Reference</h2>
+<pre>
+To apply a style to a specific element use # + the id of this element:
+
+#idName{
+properties;
+}
+</pre>
+
+<h2>CLASS Reference</h2>
+<pre>
+To apply a style to a class of elements use . + the class given:
+
+.className{
+properties;
+}
+</pre>
+
+<h2>CHILD Reference</h2>
+<pre>
+Use &gt; to access the child selector or :nth-child to access a specific child:
+
+ul &gt; li{
+properties;
+}
+
+li:nth-child(2){
+properties;
+}
+</pre>
+
+<h2>Links States</h2>
+<pre>
+a:link (unvisited link)
+a:visited (visited link)
+a:hover (moving the mouse over the link)
+a:active (a link when clicked)
+</pre>
+
+<h2>Flexbox Layout</h2>
+<pre>
+Use the property display:flex; for the parent container
+</pre>
+<h3>Other flexbox properties for the parent:</h3>
+<pre>
+flex-wrap
+flex-direction
+align-items
+justify-content
+align-content
+</pre>
+<h3>Flexbox properties for the children:</h3>
+<pre>
+order
+align-self
+</pre>
+
+<h2>Grid Layout</h2>
+<pre>
+Use the property display:grid; for the parent container
+</pre>
+<h3>Other grid properties for the parent:</h3>
+<pre>
+justify-content
+align-content
+grid-template-columns
+grid-template-rows
+</pre>
+<h3>Grid properties for the children:</h3>
+<pre>
+grid-column
+grid-row
+grid-area
+</pre>
+
+</body>
+</html>

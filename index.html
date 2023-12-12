@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <header>
+      <ul>
+          <li id="name">marianna antunes</li>
+          <li><a href="#aboutMe">ABOUT ME</a></li>
+          <li><a href="#job">EDUCATION AND PROFESSIONAL</a></li>
+          <li><a href="#hobbies">HOBBIES</a></li>
+          <li><a href="#contact">CONTACT ME</a></li>
+          <li><a href="htmlpage.html" target="_blank">HTML PAGE</a></li>
+          <li><a href="csspage.html" target="_blank">CSS PAGE</a></li>
+          <li><a href="jspage.html" target="_blank">JS PAGE</a></li>
+      </ul>
+  </header>
+  <main>
+      <header id="aboutMe">
+          <section id="sec1a">
+              <h2 id="introduce">Hey, I'm Marianna...</h2>
+              <p>and I'm 29 years old, Brazilian and married. I also love new challenges and adventures.</p>
+              <p>That's why I'm now living in Calgary/CA as an international student. Here I have the opportunity to get to know different places, people and cultures and improve my career development.
+                I'm also close to one of the most beautiful places I've ever seen: the Rocky Mountains!</p>
+          </section>
+          <section id="sec1b">
+            <img id="img01" src="image01.jpeg">
+          </section>
+          <section id="sec1c">
+            <p>Let's get to know each other a little better...</p>
+          </section>
+      </header>
+      <article id="job">
+        <section id="sec2a">
+          <p>I have a degree in Chemical Engineering and a postgraduate degree in Safety Engineering.
+            Now I'm studying Software Development at Bow Valley College in a diploma program. I believe that it will open up new opportunities to grow and develop my carrer.
+            I've been spending the past four years working at a consulting company supporting offshore oil and gas companies to have a safer and healthier environment for their employees.
+          </p>
+        </section>
+        <section id="sec2b">
+          <h2 id="what">Here's what</h2>
+          <br>
+          <h2 id="Ido">I do...</h2>
+          <img id="img02" src="image02.jpeg">
+        </section>
+        <section id="sec2c">
+          <p>I manage a team and its tasks, define procedures, assess risks and assist in the implementation of control actions as well.</p>
+          <br>
+          <p>I also write and review safety and health legal documents, such as reports, with emphasis on the Occupational Hygiene.
+            I plan and control deliveries and work to ensure their quality and customers satisfaction.</p>
+          <br>
+          <p>I assist the safety technicians before, during and after services at the customer’s site and collaborate with staff training about exposure assessment and risk measurement.</p>
+        </section>
+      </article>
+      <article id="hobbies">
+        <section id="sec3a">
+          <h2 id="myHobbies">My hobbies...</h2>
+          <p>I believe that around the table we have a great opportunity to connect with people. That's the reason why I not only love cooking, but also love eating!</p>
+          <br>
+          <p>Travel, new places and adventures... put these things together and you have the secret to make me very happy!</p>
+          <img id="img05" src="image05.jpeg">
+          <img id="img04" src="image04.jpeg">
+        </section>
+        <section id="sec3b">
+          <img id="img03" src="image03.jpeg">
+        </section>
+      </article>
+      <footer>
+        <form onsubmit="sendEmail(); reset(); return false">
+          <fieldset id="contact">
+            <legend>Contact me</legend>
+            <input type="text" id="name2" placeholder="Enter your name" required>
+            <br>
+            <br><input type="email" id="email" placeholder="Enter your e-mail" required>
+            <br>
+            <br><textarea id="message" rows="10" placeholder="Please write your message here."></textarea>
+            <br>
+            <br><button type="submit">SEND</button>
+            <input type="hidden" name="_subject" value="New submission">
+          </fieldset>
+        </form>
+      </footer>
+    </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
